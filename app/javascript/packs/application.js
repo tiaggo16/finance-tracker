@@ -15,4 +15,3 @@ Turbolinks.start()
 ActiveStorage.start()
 
 import "bootstrap";
-import "./src/application.scss";

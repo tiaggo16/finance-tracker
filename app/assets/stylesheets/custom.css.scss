@@ -2,6 +2,11 @@
 
 .search-area {
   padding-top: 50px;
+  padding-bottom: 15px;
+}
+
+.search-form {
+  width: 980px ; 
 }
 
 .no-right-padding {
@@ -24,4 +29,12 @@
 .user-name {
   margin-top: 3.5%;
   margin-right: 5px;
+}
+
+.jumbotron {
+  background-image: asset-url('stock-background.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 425px;
 }

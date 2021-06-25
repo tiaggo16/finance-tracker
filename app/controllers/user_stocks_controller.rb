@@ -8,7 +8,12 @@ class UserStocksController < ApplicationController
     end
     @user_stock = UserStock.create(user: current_user, stock: stock)
     flash[:notice] = "Stock #{stock.name} was successfully added to your portfolio"
-    redirect_to my_portfolio_path
+    user = User.find(params[:user])
+    if current_user == user
+      redirect_to my_portfolio_path
+    else
+      redirect_to user_path(user.id)
+    end
   end
 
   def destroy
